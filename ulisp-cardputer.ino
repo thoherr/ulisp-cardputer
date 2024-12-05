@@ -6703,7 +6703,7 @@ void setup () {
   initsleep();
   initBoard();
   initgfx();
-  pfstring(PSTR("uLisp 4.7 "), pserial); pln(pserial);
+  pfstring(PSTR("uLisp 4.7 (thoherr) "), pserial); pln(pserial);
 }
 
 // Read/Evaluate/Print loop
