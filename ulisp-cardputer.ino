@@ -6036,7 +6036,9 @@ object *eval (object *form, object *env) {
 
 void pserial (char c) {
   LastPrint = c;
-  if (!tstflag(NOECHO)) Display(c);         // Don't display when paste in listing
+  // if (!tstflag(NOECHO)) Display(c);         // Don't display when paste in listing
+  Display(c); // THE 2024-12-05 sync serial and display to get all information
+              // otherwise the display is dead e.g. after loading LispLibrary
   #if defined (serialmonitor)
   if (c == '\n') Serial.write('\r');
   Serial.write(c);

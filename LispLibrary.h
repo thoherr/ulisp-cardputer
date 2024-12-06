@@ -60,7 +60,7 @@ Returns x if x is in lst, or nil otherwise."
 ; find-if
 
 (defun find-if (tst lst)
-  "(find-if
+  "(find-if tst lst)
 Returns the first item in lst for which tst is true, or nil otherwise."
   (cond
    ((null lst) nil)
@@ -200,7 +200,6 @@ Returns a list with all items for which tst is false removed from lst."
 
 (defvar third caddr)
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;; more useful functions to preload
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -232,3 +231,4 @@ Loads lisp definitions from a text file on the SD card and evaluates them."
        (eval form)))))
 
 )lisplibrary";
+
