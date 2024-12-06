@@ -6698,7 +6698,7 @@ void initgfx () {
 void setup () {
   Serial.begin(9600);
   int start = millis();
-  while ((millis() - start) < 5000) { if (Serial) break; }
+  while ((millis() - start) < 500) { if (Serial) break; }
   int stackhere = 0; StackBottom = &stackhere;
   initworkspace();
   initenv();
